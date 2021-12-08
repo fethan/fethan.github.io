@@ -3,9 +3,19 @@
         
     </head>
 <body>
+    
     <ul>
         <li>css ten nefret ediyorum</li>
         <li>Bi işi yapmak için görünen kısayol uzun yol olabilir.</li>
     </ul>
+
+    <div id="visits">
+    </div>
+<script>
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/fethan.github.io/visits?callback=cb"></script>
 </body>
 </html>
